@@ -1,0 +1,55 @@
+2024-01-29 16:55:36,705 INFO ru.jenningc.SpringDemoBot.SpringDemoBotApplication [main] Starting SpringDemoBotApplication using Java 11.0.22 on pr-n5.kzn.21-school.ru with PID 86360 (/Users/jenningc/Downloads/SpringDemoBot/target/classes started by jenningc in /Users/jenningc/Downloads/SpringDemoBot)
+2024-01-29 16:55:36,709 INFO ru.jenningc.SpringDemoBot.SpringDemoBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-29 16:55:37,161 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 16:55:37,195 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2024-01-29 16:55:37,540 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-01-29 16:55:37,551 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 16:55:37,551 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-01-29 16:55:37,551 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-01-29 16:55:37,656 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-29 16:55:37,656 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 905 ms
+2024-01-29 16:55:37,776 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 16:55:37,810 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.9.Final
+2024-01-29 16:55:37,914 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 16:55:37,997 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-29 16:55:38,072 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-29 16:55:38,082 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-01-29 16:55:38,467 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 16:55:38,473 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 16:55:39,615 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 16:55:39,836 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 16:55:39,855 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 16:55:39,932 INFO ru.jenningc.SpringDemoBot.SpringDemoBotApplication [main] Started SpringDemoBotApplication in 3.471 seconds (JVM running for 4.132)
+2024-01-29 16:55:48,520 ERROR ru.jenningc.SpringDemoBot.model.weather.WeatherApp [vk_int_pet_bot Telegram Executor] Error with weather: class org.json.simple.JSONArray cannot be cast to class org.json.JSONObject (org.json.simple.JSONArray and org.json.JSONObject are in unnamed module of loader 'app')
+2024-01-29 16:56:18,260 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 16:56:18,262 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-29 16:56:18,266 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-29 17:01:06,862 INFO ru.jenningc.SpringDemoBot.SpringDemoBotApplication [main] Starting SpringDemoBotApplication using Java 11.0.22 on pr-n5.kzn.21-school.ru with PID 88999 (/Users/jenningc/Downloads/SpringDemoBot/target/classes started by jenningc in /Users/jenningc/Downloads/SpringDemoBot)
+2024-01-29 17:01:06,864 INFO ru.jenningc.SpringDemoBot.SpringDemoBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-29 17:01:07,294 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 17:01:07,334 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2024-01-29 17:01:07,758 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-01-29 17:01:07,766 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 17:01:07,766 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-01-29 17:01:07,766 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-01-29 17:01:07,848 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-29 17:01:07,848 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 956 ms
+2024-01-29 17:01:07,976 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 17:01:08,011 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.9.Final
+2024-01-29 17:01:08,117 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 17:01:08,189 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-29 17:01:08,252 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-29 17:01:08,263 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-01-29 17:01:08,674 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 17:01:08,682 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 17:01:09,548 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 17:01:09,761 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 17:01:09,781 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 17:01:09,856 INFO ru.jenningc.SpringDemoBot.SpringDemoBotApplication [main] Started SpringDemoBotApplication in 3.24 seconds (JVM running for 4.452)
+2024-01-29 17:09:50,535 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m2s301ms).
+2024-01-29 17:10:54,607 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s72ms).
+2024-01-29 17:12:14,775 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s168ms).
+2024-01-29 17:12:32,595 ERROR ru.jenningc.SpringDemoBot.model.weather.WeatherApp [vk_int_pet_bot Telegram Executor] Error with weather: class org.json.simple.JSONArray cannot be cast to class org.json.JSONObject (org.json.simple.JSONArray and org.json.JSONObject are in unnamed module of loader 'app')
+2024-01-29 17:12:43,683 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 17:12:43,685 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-29 17:12:43,689 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
