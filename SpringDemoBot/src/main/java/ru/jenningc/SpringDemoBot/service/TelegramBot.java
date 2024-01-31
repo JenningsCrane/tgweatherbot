@@ -19,7 +19,7 @@ import ru.jenningc.SpringDemoBot.model.joke.Joke;
 import ru.jenningc.SpringDemoBot.model.joke.JokeRepository;
 import ru.jenningc.SpringDemoBot.model.user.User;
 import ru.jenningc.SpringDemoBot.model.user.UserRepository;
-import ru.jenningc.SpringDemoBot.model.weather.WeatherApp;
+import ru.jenningc.SpringDemoBot.model.weather.Weather;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -27,6 +27,12 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
+import static ru.jenningc.SpringDemoBot.model.weather.WeatherApp.getWeatherData;
+
+enum WeatherState {
+    DEFAULT,
+    WAITING_FOR_CITY
+}
 @Slf4j
 @Component
 public class TelegramBot extends TelegramLongPollingBot {
@@ -37,6 +43,8 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Autowired
     private JokeRepository jokeRepository;
     final BotConfig config;
+
+    private WeatherState currentState = WeatherState.DEFAULT;
 
     static final String HELP_TEXT =
             "Этот бот создан для демонстрации возможностей Spring.\n\n" +
@@ -75,6 +83,10 @@ public class TelegramBot extends TelegramLongPollingBot {
 
             if (messageText.contains("/send") && config.getOwnerId() == chatId) {
                 sendMessageToAllUsers(messageText);
+            } else if (currentState == WeatherState.WAITING_FOR_CITY) {
+                getWeatherData(messageText);
+                preparedAndSendMessage(message.getChatId(), Weather.weatherString());
+                currentState = WeatherState.DEFAULT;
             } else {
                 switch(messageText) {
                     case "/start":
@@ -93,7 +105,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                         registerUser(message);
                         break;
                     case "Погода":
-                        System.out.println(WeatherApp.getLocationData("Tokyo"));
+                        getWeather(message);
                         break;
                     case "Анекдот":
                         getJoke(message);
@@ -105,6 +117,11 @@ public class TelegramBot extends TelegramLongPollingBot {
         }
     }
 
+    private void getWeather(Message message) {
+        var chatId = message.getChatId();
+        preparedAndSendMessage(chatId, "Введите название города с большой буквы:\n");
+        currentState = WeatherState.WAITING_FOR_CITY;
+    }
     private void getJoke(Message message) {
         var chatId = message.getChatId();
         Random random = new Random();

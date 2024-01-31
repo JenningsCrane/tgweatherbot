@@ -19,6 +19,4 @@ public class BotConfig {
     @Value("${bot.owner}")
     Long ownerId;
 
-//    @Value("${bot.weatherapi}")
-//    String weatherApi;
 }
