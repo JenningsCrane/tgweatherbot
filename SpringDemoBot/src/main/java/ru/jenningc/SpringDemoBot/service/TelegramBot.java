@@ -27,7 +27,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
-import static ru.jenningc.SpringDemoBot.model.weather.WeatherApp.getWeatherData;
+import static ru.jenningc.SpringDemoBot.model.weather.WeatherService.getWeatherData;
+
 
 enum WeatherState {
     DEFAULT,
